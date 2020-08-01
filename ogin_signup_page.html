@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="https://www.betterbuys.com/wp-content/uploads/2016/08/IPM-Global-logo.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  color:white;
+  font-family:Arial, Helvetica, sans-serif;
+  /*background-color: #0095FB;*/
+    /*background:url(https://static.vecteezy.com/system/resources/previews/000/598/501/non_2x/light-blue-vector-low-poly-crystal-background-polygon-design-pa.jpg); */
+    background-color: #445f85;
+  background-size:cover;
+  background-position: center;
+  animation: degisenarkaplan 15s ease infinite;
+}
+/*@keyframes degisenarkaplan {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.spacing {
+  width: 10%;
+}
+
+form {
+  width:50vw;
+  min-width: 500px;
+  height:650px;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
+  border-radius: 8px;
+  height: 40px;
+  font-size: 1.2em;
+  outline: none;
+  margin: 4px 10px 10px 10px;
+  padding: 2px 12px;
+  width: 66%;
+}
+
+.double-field {
+  width: 95%;
+  display: flex;
+}
+
+.double-field > div > p {
+  padding-left: 0;
+}
+
+.input-div {
+  width: 70%;
+  display: flex;
+  margin: 10px;
+  margin-top: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-div > p {
+  width: 96%;
+  margin: 0;
+  padding-left: 2%;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  border-radius: 25px;
+  background-color:rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#button-text {
+  font-weight: bold;
+  line-height: 40px;
+  text-align: center;
+  transition-duration: 0.4s;
+  margin: 0;
+  user-select: none;
+  transform: translateY(-20px);
+}
+
+.title {
+  width: 100%;
+  overflow: hidden;
+  height: 50px;
+  margin-bottom: 24px
+}
+
+#title-text{
+  font-size: 40px;
+  line-height: 80px;
+  text-align: center;
+  transition-duration: 0.4s;
+  margin: 0;
+  user-select: none;
+  transform: translateY(-94px);
+}
+
+#button {
+  cursor: pointer;
+  color: #0095FB;
+  font-weight: bold;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-size: 1.5em;
+  margin: 10px;
+  padding: 10px 80px;
+  transition-duration: 0.2s;
+  width: 255px;
+}
+
+#button:hover {
+  transform: scale(1.05);
+}
+
+#signUp-only {
+  transition-duration: 0.3s;
+}
+
+.show-field {
+  height: 90px;
+  opacity: 1;
+}
+
+.hide-field {
+  height: 0px;
+  opacity: 0;
+}
+
+
+.mera{
+   background-color:rgba(1, 1, 1, 0.5);
+   border-radius: 40px;
+}
+
+
+
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="toggle-button" onclick="toggle()"><p id="button-text">Sign Up<br>Sign In</p></div>
+  <div class="mera">
+  <form>
+    <div class="title"><h3 id="title-text">IPM<br>Create an Account</h3></div>
+    <!-- <div class="double-field show-field" id="signUp-only">
+      <div class="input-div" ><p>Name:</p><input type="text" name="name" maxlength="30"></div>
+      <span class="spacing"></span>
+      <div class="input-div"><p>Username:</p><input type="text" name="username" maxlength="30" > </div>
+    </div> -->
+    <div class="input-div"><p>Email:</p><input type="email" name="email"  ></div>
+    <div class="input-div"><p>Password:</p><input type="password" name="password"></div>
+    <div class="input-div show-field" id="signUp-only">
+      <p>Confirm Password:</p>
+      <input type="password" name="password_confirmation" >
+    </div>
+     <div class="input-div show-field" id="signUp-only">
+      <p>Jira base url:</p>
+      <input type="text" name="Jira_base_url">
+    </div>
+      <div class="input-div show-field" id="signUp-only">
+      <p>Jira access token:</p>
+      <input type="text" name="Jira_access_token" >
+    </div>
+      <div class="input-div show-field" id="signUp-only">
+      <p>Github access token:</p>
+      <input type="text" name="Github_access_token" >
+    </div>
+    <button id="button">Sign Up</button>
+  </form>
+</div>
+</div>
+
+<script type="text/javascript">
+  
+  let clicked = true
+const toggle = () => {
+  clicked = !clicked
+  document.getElementById('button-text').style.transform = (clicked ? 'translateY(-20px)' : 'translateY(20px)')
+  document.getElementById('title-text').style.transform = (clicked ? 'translateY(-94px)' : 'translateY(-12px)')
+  document.getElementById('button').innerText = (clicked ? 'Sign Up' : 'Sign In')
+
+  const hiddenItems = document.querySelectorAll('#signUp-only')
+  for (var i = 0; i < hiddenItems.length; i++) {
+    var item = hiddenItems[i]
+    item.classList.add(clicked ? 'show-field' : 'hide-field')
+    item.classList.remove(!clicked ? 'show-field' : 'hide-field')
+  }
+}
+</script>
+   
+</body>
+</html> 
