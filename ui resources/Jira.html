@@ -2,6 +2,9 @@
 <html>
 <head>
     <link rel="shortcut icon" href="https://www.betterbuys.com/wp-content/uploads/2016/08/IPM-Global-logo.png">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js@2.9.3/introjs.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js@2.9.3/themes/introjs-modern.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
@@ -164,6 +167,21 @@ input.search-bar{
 }
 
 
+.hold-me{max-width:50px;border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0px 6px 20px 1px #00000063;
+    background-color: white;
+    margin-bottom: 15px;
+    cursor: pointer;}
+
+.hold-me:hover {
+    box-shadow: 0px 6px 20px 1px #3F51B5;
+    border: 1px solid #3F51B5;
+}
+
 
 
 
@@ -194,11 +212,12 @@ input.search-bar{
    <img src="https://cdn.freebiesupply.com/logos/large/2x/jira-logo-black-and-white.png" style="width: 415px; max-height: 250px;margin-left: 540px; padding-bottom: 37px;margin-top: 22px; ">
    <form id="labnol" class="search-container" action="{%url 'jira_search'%}" method="POST" >
     {% csrf_token %}
-    <input type="text" class="search-bar" placeholder="What can I help you with today?" name="query" id="transcript">
-  <!--   <a href="listen"> --><img class="search-icon" onclick="startDictation()" src="https://webstockreview.net/images/microphone-clipart-logo-10.png" style=" width: 90PX;
+    <img class="search-icon hold-me" onclick="startDictation()" src="https://image.flaticon.com/icons/svg/26/26312.svg"  style=" width: 90PX;
     height: 42px;
-    top: -45px;
-    left: 50px;"><!-- </a> -->
+    top: -9px;
+    left: -215px;">
+    <input type="text" class="search-bar" placeholder="What can I help you with today?" name="query" id="transcript">
+  <!--   <a href="listen"> --><!-- </a> -->
     <a href="search"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png" style="float:left;left: -83px;"></a>
 
   </form>
@@ -239,12 +258,10 @@ input.search-bar{
 </script>
 
 <!-- Website tour -->
-/* removing bullets coz it was building some unwanted blocks */
-.introjs-bullets {
-  display: none;
-}
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js@2.9.3/introjs.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js@2.9.3/themes/introjs-modern.min.css">
+<!-- /* removing bullets coz it was building some unwanted blocks */ -->
+<!-- .introjs-bullets {
+  display: none; -->
+<!-- } -->
 <script src="https://cdn.jsdelivr.net/npm/intro.js@2.9.3/intro.min.js"></script>
    <script>
      const intro = introJs()
