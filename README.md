@@ -77,6 +77,7 @@ or
 ## Resources
 - https://github.com/PyGithub/PyGithub
 - https://github.com/usablica/intro.js/
+- https://github.com/dongjun-Lee/text-summarization-tensorflow
 
 ## License
 Apache License 2.0
