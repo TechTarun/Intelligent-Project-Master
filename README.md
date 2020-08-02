@@ -22,7 +22,7 @@ So, IPM is your personal **Jarvis**, a tool from the future; for the future.
 ###  Jira
 >- Issues can be created, updated or deleted through voice commands.
 >- Attachment actions like creating attachment as a comment or adding them.
-<img height="480px" src="image/WhatsApp Image 2020-08-02 at 4.25.05 PM.jpeg">
+<img height="240px" width="480px" src="image/WhatsApp Image 2020-08-02 at 4.25.05 PM.jpeg">
  
 ### Confluence
 >- Voice based creation of pages.
