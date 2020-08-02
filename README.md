@@ -41,7 +41,7 @@ Main query include-
 
 ## Installation
 ### Requirements
->-  <img height="80" width="80" src="image/window10_logo1.png"> Windows 10
+>-  <img height="30" width="30" src="image/window10_logo1.png"> Windows 10
 or
 >- Ubuntu 18.04
 
