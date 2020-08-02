@@ -13,17 +13,18 @@ So, IPM is your personal **Jarvis**, a tool from the future; for the future.
 - Creates MOM of scrum ceremonies easily.
 - Create a Jira task/Github repository just by a voice command.
 - Pulls out an e-mail by its sender or by its subject through a simple voice query.
+<hr>
 
 ### Workflow
-#### Query Processing
+#### - Query Processing
 <img height="480px" src="image/query process.jpeg"> 
 
-#### Keyword Extraction
+#### - Keyword Extraction
 <img height="480px" src="image/keyword extract.jpeg">
 
-#### MoM Extraction
+#### - MoM Extraction
 <img height="480px" src="image/mom extract.jpeg">
-
+<hr>
 ## Features
 <!--modular object oriented designing approach that makes any part easily replacable-->
 
@@ -55,7 +56,7 @@ Main query include-
 ### Minutes OF Meetings
 >This module intelligently creates MOM during the scrum ceremony for the future reference 
 <img height="480px" src="image/WhatsApp Image 2020-08-02 at 5.14.47 PM.jpeg">
-
+<hr>
 ## Installation
 ### Requirements
 >-  <img height="15" width="15" src="image/window10_logo1.png"> Windows 10
@@ -69,5 +70,8 @@ or
 >Android 7 and above (Android apps are tested on Android 7)
 
 ## Resources
-https://github.com/PyGithub/PyGithub
-https://github.com/usablica/intro.js/
+- https://github.com/PyGithub/PyGithub
+- https://github.com/usablica/intro.js/
+
+## License
+Apache License 2.0
