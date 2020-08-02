@@ -37,6 +37,8 @@ Main query include-
 >- Manage projects like creating a project, fetching project summary.
 ### Minutes OF Meetings
 >This module intelligently creates MOM during the scrum ceremony for the future reference 
+<img height="480px" src="image/WhatsApp Image 2020-08-02 at 5.14.47 PM.jpeg">
+
 ## Installation
 ### Requirements
 > Windows 10
