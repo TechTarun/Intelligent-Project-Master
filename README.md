@@ -17,6 +17,7 @@ So, IPM is your personal **Jarvis**, a tool from the future; for the future.
 <hr>
 
 ### Architectural diagram
+<img src="image/Screenshot (65).png">
 
 <hr>
 
