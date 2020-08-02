@@ -61,5 +61,8 @@ or
 >Android 7 and above (Android apps are tested on Android 7)
 
 ## Resources
-https://github.com/PyGithub/PyGithub
-https://github.com/usablica/intro.js/
+- https://github.com/PyGithub/PyGithub
+- https://github.com/usablica/intro.js/
+
+## License
+Apache License 2.0
