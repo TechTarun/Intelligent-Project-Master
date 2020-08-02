@@ -2,24 +2,17 @@
 <html>
 <head>
     <link rel="shortcut icon" href="https://www.betterbuys.com/wp-content/uploads/2016/08/IPM-Global-logo.png">
-  
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js@2.9.3/introjs.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js@2.9.3/themes/introjs-modern.min.css">
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-  /* removing bullets coz it was building some unwanted blocks */
-.introjs-bullets {
-  display: none;
-}
 body {
   font-family: "Lato", sans-serif;
  
-  background-image: url("https://assets.onthehub.com/attachments/9/abdd7df6-906a-e911-8115-000d3af41938/e23e4b30-47d1-4874-8096-bf34ab587c7b.jpg?t=636922508040200000");
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQLyWMfGxRsGGn3x3NnTRk2AsEX3ts8qf7jMjcC4ViAQM65bufh");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 ul {
   list-style-type: none;
   margin: -8px;
@@ -95,8 +88,8 @@ li a:hover:not(.active) {
   border-radius: 9px;
 }
 
-input#search-bar{
-  margin: 0 -30px;
+input.search-bar{
+  margin: 0 -70px;
   width: 100%;
   height: 45px;
   padding: 0 50px;
@@ -129,8 +122,7 @@ input#search-bar{
   width: 75px;
   height: 75px;
   top: -62px;
-  right: -50px;
-  left:40px;
+  right: 51px;
 }
 
 
@@ -156,7 +148,7 @@ input#search-bar{
 /* Position text in the middle of the page/image */
 .bg-text {
    /* Fallback color */
-  background-image: linear-gradient(to bottom,rgba(21,131,120,0.8), rgba(0,0,0,1)); /* Black w/opacity/see-through */
+  background-image: linear-gradient(to bottom, rgba(0,102,255,0.8), rgba(0,0,0,1)); /* Black w/opacity/see-through */
   color: white;
   font-weight: bold;
  
@@ -178,7 +170,8 @@ input#search-bar{
 </style>
 </head>
 <body>
-    <ul>
+
+<ul>
   <li><a href="{% url 'profill'%}">Home</a></li>
   <li><a href="{% url 'jira'%}">Jira</a></li>
   <li><a href="{% url 'Confluence'%}">Confluence</a></li>
@@ -187,45 +180,71 @@ input#search-bar{
 
   <li style="float:right"><a class="active" href="{% url 'index'%}">Logout</a></li>
 </ul>
+
     <div class="bg-image"></div>
 
 <div class="bg-text">
 
 <div id="mySidenav" class="sidenav">
-    <!-- <a href="{% url 'profill'%}"><img src="https://cdn4.iconfinder.com/data/icons/rounded-black-basic-ui/139/Home01-RoundedBlack-512.png" style="width: 70px; height: 70px;float:left;"></a> -->
-<!--  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
-<!--    <a href="{% url 'profill'%}">Profile</a>-->
-<!--  <a href="{% url 'jira'%}">jira</a>-->
-<!--  <a href="{% url 'Confluence'%}">Confluence</a>-->
-<!--  <a href="{% url 'Github'%}">Github</a>-->
-<!--  <a href="{% url 'Bitbucket'%}">Bitbucket</a>-->
-<!--    <a href="{% url 'mailsearcher'%}">Emails</a>-->
-<!--    <a href="{% url 'index'%}">Logout</a>-->
+  
 </div>
 
 
-<!--<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>-->
 <div style="margin-top: 100px; margin-left:20px;">
-    <a> <img src="https://cfdn.clearvision-cm.com/wp-content/uploads/2018/05/31102732/Bitbucket%402x-white1.png" style="width: 507px; height: 134px; margin-left: 520px; padding-bottom:58px; margin-top: 91px; "></a>
-   <form class="search-container" action="#" method="POST" >
+   <img src="https://cdn.freebiesupply.com/logos/large/2x/jira-logo-black-and-white.png" style="width: 415px; max-height: 250px;margin-left: 540px; padding-bottom: 37px;margin-top: 22px; ">
+   <form id="labnol" class="search-container" action="{%url 'jira_search'%}" method="POST" >
     {% csrf_token %}
-    <input type="text" id="search-bar" placeholder="What can I help you with today?" name="query" value='{{query}}'>
-    <a href="listen"><img class="search-icon" src="https://webstockreview.net/images/microphone-clipart-logo-10.png" style="width:90px; height:48px; top:-46px;left:85px;"></a>
-    <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png" style="float:left;left:-46px;"></a>
+    <input type="text" class="search-bar" placeholder="What can I help you with today?" name="query" id="transcript">
+  <!--   <a href="listen"> --><img class="search-icon" onclick="startDictation()" src="https://webstockreview.net/images/microphone-clipart-logo-10.png" style=" width: 90PX;
+    height: 42px;
+    top: -45px;
+    left: 50px;"><!-- </a> -->
+    <a href="search"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png" style="float:left;left: -83px;"></a>
 
   </form>
   </div>
-<!-- <div style="text-align: center;">
-  {% for r in repo %}
-  <h4>{{r}}</h4>
-  {%endfor%}
-</div> -->
+<div style="text-align: center;">
+  {{output}}
+</div>
 
   </div>
 
+<!-- speech to text -->
+ <script>
+  function startDictation() {
 
+    if (window.hasOwnProperty('webkitSpeechRecognition')) {
+
+      var recognition = new webkitSpeechRecognition();
+
+      recognition.continuous = true;
+      recognition.interimResults = false;
+
+      recognition.lang = "en-US";
+      recognition.start();
+
+      recognition.onresult = function(e) {
+        document.getElementById('transcript').value
+                                 = e.results[0][0].transcript;
+        recognition.stop();
+        document.getElementById('labnol').submit();
+      };
+
+      recognition.onerror = function(e) {
+        recognition.stop();
+      }
+
+    }
+  }
+</script>
 
 <!-- Website tour -->
+/* removing bullets coz it was building some unwanted blocks */
+.introjs-bullets {
+  display: none;
+}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js@2.9.3/introjs.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js@2.9.3/themes/introjs-modern.min.css">
 <script src="https://cdn.jsdelivr.net/npm/intro.js@2.9.3/intro.min.js"></script>
    <script>
      const intro = introJs()
@@ -233,14 +252,13 @@ input#search-bar{
    intro.setOptions({
        steps: [{
             element:'.step-one',
-           intro: `Here, you can query about Bitbucket. Click on Mic to get started.`
+           intro: `Here, you can query about Confluence. Click on Mic to get started.`
        },
    ]
    })
    
    intro.start();
    </script>
-   
    
 </body>
 </html> 

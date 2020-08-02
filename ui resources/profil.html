@@ -2,10 +2,18 @@
 <html>
 <head>
     <link rel="shortcut icon" href="https://www.betterbuys.com/wp-content/uploads/2016/08/IPM-Global-logo.png">
+   
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js@2.9.3/introjs.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js@2.9.3/themes/introjs-modern.min.css">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
 <style>
+   /* removing bullets coz it was building some unwanted blocks */
+.introjs-bullets {
+  display: none;
+}
 body {
    background-color: #ffffff;
   /*background: linear-gradient(to bottom, #33cccc -34%, #006699 107%);*/
@@ -89,7 +97,7 @@ li a:hover:not(.active) {
 </ul> -->
 <div class="container">
   <main class="grid">
-    <a href="#"><div class="mera">
+    <a href="#"><div class="mera step-one">
       <div style="background-image: linear-gradient(to bottom, rgba(0,102,255,0.8), rgba(0,0,0,1));">
       <div style="width: 435px; background-image: url(https://cdn.freebiesupply.com/logos/large/2x/jira-logo-black-and-white.png );background-size: 89%;/*border-radius: 20px;*/
     background-position: center;
@@ -97,10 +105,10 @@ li a:hover:not(.active) {
     </div>
   </div>
       <div class="text">
-        <p>Collaboratively administrate empowered markets via plug-and-play networks.</p>
+        <p>Empower your teams. Take your project management skills to the next level. Agile Functionality. Integrates with Other Tools.</p>
       </div>
     </div></a>
-     <a><div class="mera">
+     <a><div class="mera step-two">
       <div style="background-image: linear-gradient(to bottom, rgba(102,0,255,0.8), rgba(0,0,0,1)); ">
       <div style="width: 435px; background-image: url(https://cdn.freebiesupply.com/logos/large/2x/confluence-logo-black-and-white.png);background-size: 89%;
     background-position: center;
@@ -108,10 +116,10 @@ li a:hover:not(.active) {
     </div>
   </div>
       <div class="text">
-        <p>Collaboratively administrate empowered markets via plug-and-play networks.</p>
+        <p>It is a Team Workspace Where Knowledge & Collaboration Meet. The Complete Workflow Tool.</p>
       </div>
     </div></a>
-     <a><div class="mera">
+     <a><div class="mera step-three">
       <div style="background-image: linear-gradient(to bottom, rgba(204,204,204,0.8),rgba(102,102,102,0.8), rgba(0,0,0,1));">
       <div style="width: 435px; background-image: url(https://saas.whitesourcesoftware.com/Wss/github/github-logo-white.png);background-size: 89%;
     background-position: center;
@@ -120,10 +128,10 @@ li a:hover:not(.active) {
   </div>
   
       <div class="text">
-        <p>Collaboratively administrate empowered markets via plug-and-play networks.</p>
+        <p>Create a Repository, Make a Commit, Create an Issue, Create a File, and what not.</p>
       </div>
     </div></a>
-     <a><div class="mera">
+     <a><div class="mera step-four">
       <div style="background-image: linear-gradient(to bottom,rgba(21,131,120,0.8), rgba(0,0,0,1));">
       <div style="width: 435px; background-image: url(https://cfdn.clearvision-cm.com/wp-content/uploads/2018/05/31102732/Bitbucket%402x-white1.png);background-size: 89%;
     background-position: center;
@@ -131,32 +139,75 @@ li a:hover:not(.active) {
     </div>
     </div>
       <div class="text">
-        <p>Collaboratively administrate empowered markets via plug-and-play networks.</p>
+        <p>Build, test, and deploy with unlimited private or public space with Bitbucket®. One tool for all your professional needs from code to deployment. Code collab for teams. Unlimited private repos.</p>
       </div>
     </div></a>
      
-     <a><div class="mera">
+     <a><div class="mera step-five">
       <div style="background-image: linear-gradient(to bottom, rgba(255, 102, 102,0.8), rgba(0,0,0,1));">
       <div style="font-size:139px;text-align: center;padding: 45px;color: white; font-family: 'Ubuntu', sans-serif;">Mail
     </div>
   </div>
       <div class="text">
-        <p>Collaboratively administrate empowered markets via plug-and-play networks.</p>
+        <p>Get all your mail details. Find by sender, or by subject, or by date. Mail Searcher is here for your help!</p>
       </div>
     </div></a>
 
 
-      <a><div class="mera">
-        <div style="background-image: linear-gradient(to bottom, rgba(0, 153, 204,0.8), rgba(0,0,0,1));">
+    <a><div class="mera step-six">
+    <div style="background-image: linear-gradient(to bottom, rgba(0, 153, 204,0.8), rgba(0,0,0,1));">
       <div style="font-size:108px;text-align: center;padding: 61px;width: 313px; font-family: 'Ubuntu', sans-serif;color: white;">
         Logout
     </div>
   </div>
       <div class="text">
-        <p>Collaboratively administrate empowered markets via plug-and-play networks.</p>
+        <p>Click here to Log Out from IPM.</p>
       </div>
     </div></a>
   </main>
 </div>
+
+<!-- Website tour -->
+<script src="https://cdn.jsdelivr.net/npm/intro.js@2.9.3/intro.min.js"></script>
+   <script>
+     const intro = introJs()
+   
+   intro.setOptions({
+       steps: [{
+            element:'.step-zero',
+           intro: `Welcome to the dashboard of IPM. Click on any card to get started.`
+       },
+       {
+         element:'.step-one',
+         intro: 'Click here to start your Jira Query.'
+       },
+       {
+         element:'.step-two',
+         intro: 'Click here to start your Confluence Query.'
+       },
+       {
+         element:'.step-three',
+         intro: 'Click here to start your Github Query.'
+       },
+       {
+         element:'.step-four',
+         intro: 'Click here to start your Bitbucket Query.'
+       },
+       {
+         element:'.step-five',
+         intro: 'Click here to start your Mail Query.'
+       },
+       {
+         element:'.step-six',
+         intro: 'Logout from IPM. Bye!'
+       },
+   ]
+   })
+   
+   intro.start();
+   </script>
+   
+
+
 </body>
 </html> 

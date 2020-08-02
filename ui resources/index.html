@@ -2,7 +2,9 @@
 <html>
 <head>
     <link rel="shortcut icon" href="https://www.betterbuys.com/wp-content/uploads/2016/08/IPM-Global-logo.png">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js@2.9.3/introjs.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js@2.9.3/themes/introjs-modern.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 :root {
   --primary-color: #333;
@@ -134,11 +136,10 @@ li a:hover:not(.active) {
   left: 0;
   background-color: var(--overlay-color);
 }
-
-
-
-
-
+/* removing bullets coz it was building some unwanted blocks */
+.introjs-bullets {
+  display: none;
+}
 
 
 </style>
@@ -152,7 +153,7 @@ li a:hover:not(.active) {
   <li><a href="{% url 'Github'%}">Github</a></li>
   <li><a href="{% url 'mailsearcher'%}">Email</a></li> -->
 
-  <li style="float:right;padding-right: 40px"><a class="active" href="{% url 'proceed'%}">Login</a></li>
+  <li style="float:right;padding-right: 40px"><a class="active step-one" href="{% url 'proceed'%}">Login</a></li>
 </ul>
 
     <!-- Showcase -->
@@ -172,19 +173,24 @@ li a:hover:not(.active) {
       </div>
     </section>
 
-
-
-  
-
-
-
-
+    <!-- website tour -->
+    <script src="https://cdn.jsdelivr.net/npm/intro.js@2.9.3/intro.min.js"></script>
 <script>
-$(function() {
-        const $gallery = $('.gallery a').simpleLightbox();
-      });
-TaxiNewsSig("sig")ocument.getElementById("mySidenav").style.width = "0";
-}
+  const intro = introJs()
+
+intro.setOptions({
+    steps: [{
+        intro: `Welcome To IPM.
+        I'll be your guide throughout your journey.!`
+    },
+    {
+        element: '.step-one',
+        intro: "Click here to Sign Up / Sign In."
+    },
+]
+})
+
+intro.start();
 </script>
    
 </body>

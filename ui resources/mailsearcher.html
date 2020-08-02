@@ -2,12 +2,19 @@
 <html>
 <head>
     <link rel="shortcut icon" href="https://www.betterbuys.com/wp-content/uploads/2016/08/IPM-Global-logo.png">
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js@2.9.3/introjs.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js@2.9.3/themes/introjs-modern.min.css">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <style>
 @import url(//fonts.googleapis.com/css?family=Lato:300:400);
-
+/* removing bullets coz it was building some unwanted blocks */
+.introjs-bullets {
+  display: none;
+}
 body {
   margin:0;
 }
@@ -392,6 +399,22 @@ function searchToggle(obj, evt){
         }
 }
 </script>
+<!-- Website tour -->
+<script src="https://cdn.jsdelivr.net/npm/intro.js@2.9.3/intro.min.js"></script>
+   <script>
+     const intro = introJs()
    
+   intro.setOptions({
+       steps: [{
+            element:'.step-one',
+           intro: `If you want to get details of mails, you're in the right place. Click on Mic to get started.`
+       },
+   ]
+   })
+   
+   intro.start();
+   </script>
+      
+
 </body>
 </html> 
