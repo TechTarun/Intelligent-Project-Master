@@ -41,11 +41,15 @@ Main query include-
 
 ## Installation
 ### Requirements
-> Windows 10
-> Ubuntu 18.04
+>- Windows 10
+or
+>- Ubuntu 18.04
 
 #### Backend & Web UI Host Requirements
 >Django- (sqlite)
 
 #### Supported Android versions
 >Android 8 and above
+
+## Resources
+https://github.com/PyGithub/PyGithub
