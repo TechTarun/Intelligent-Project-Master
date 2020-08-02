@@ -49,7 +49,7 @@ or
 >Django- (sqlite)
 
 #### Supported Android versions
->Android 8 and above
+>Android 7 and above (Android apps are tested on Android 7)
 
 ## Resources
 https://github.com/PyGithub/PyGithub
