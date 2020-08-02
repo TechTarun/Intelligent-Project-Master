@@ -16,6 +16,10 @@ So, IPM is your personal **Jarvis**, a tool from the future; for the future.
 - Pulls out an e-mail by its sender or by its subject through a simple voice query.
 <hr>
 
+### Architectural diagram
+
+<hr>
+
 ### Workflow
 #### - Query Processing
 <img height="480px" src="image/query process.jpeg"> 
