@@ -69,9 +69,9 @@ Main query include-
 
 ## Installation
 ### Requirements
->-  <img height="15" width="15" src="image/window10_logo1.png"> Windows 10
+>-  <a href="https://www.microsoft.com/en-in/windows/get-windows-10"><img height="15" width="15" src="image/window10_logo1.png"></a> Windows 10
 or
->- <img height="15" width="15" src="image/ubantu-logo.png"> Ubuntu 18.04
+>- <a href="https://ubuntu.com/#download"><img height="15" width="15" src="image/ubantu-logo.png"></a> Ubuntu 18.04
 
 #### Backend & Web UI Host Requirements
 >Django- (sqlite)
