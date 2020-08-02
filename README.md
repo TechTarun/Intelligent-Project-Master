@@ -14,7 +14,7 @@ So, IPM is your personal **Jarvis**, a tool from the future; for the future.
 - Create a Jira task/Github repository just by a voice command.
 - Pulls out an e-mail by its sender or by its subject through a simple voice query.
 
-<img height="480px" src="image/query process.jpeg">  <img height="480px" src="image/keyword extract.jpeg"><img height="480px" src="image/mom extract.jpeg">
+<img height="480px" src="image/query process.jpeg">  <img height="480px" src="image/keyword extract.jpeg">  <img height="480px" src="image/mom extract.jpeg">
 
 ## Features
 <!--modular object oriented designing approach that makes any part easily replacable-->
