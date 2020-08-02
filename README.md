@@ -43,7 +43,7 @@ Main query include-
 ### Requirements
 >-  <img height="15" width="15" src="image/window10_logo1.png"> Windows 10
 or
->- Ubuntu 18.04
+>- <img height="15" width="15" src="image/ubantu-logo.png"> Windows 10 Ubuntu 18.04
 
 #### Backend & Web UI Host Requirements
 >Django- (sqlite)
