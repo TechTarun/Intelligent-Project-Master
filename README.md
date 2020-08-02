@@ -62,3 +62,4 @@ or
 
 ## Resources
 https://github.com/PyGithub/PyGithub
+https://github.com/usablica/intro.js/
