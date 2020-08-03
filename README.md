@@ -77,7 +77,15 @@ or
 > <a href="https://www.djangoproject.com/"> <img height="15" width="15" src="image/Django-logo.png"> Django- (sqlite) </a>
 
 <!--Starting here about Django -->
-<div class="section">
+<div class="container sidebar-right">
+      <div role="main">
+
+        
+          
+        
+
+        
+    <div class="section">
         <h1>Meet Django</h1>
         <p>
           Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design.
@@ -103,6 +111,7 @@ or
 
         <a href="https://www.djangoproject.com/start/overview/" class="cta outline">Learn more about Django</a>
     </div>
+
 
 
 #### Supported Android versions
