@@ -62,8 +62,15 @@ Main query include-
 <hr>
 
 ## User Interface
+- Homepage of IPM
+<img height="480px" src="image/homepage ui.jpeg">
+
 - Main UI of Webapp
 <img height="480px" src="image/main ui.jpeg">
+
+- Login/Sign Up Page
+
+| <img height="480px" width="400px" src="image/login ui.jpeg">   | <img height="480px" width="400px" src="image/register ui.jpeg">  |
 
 <hr>
 
