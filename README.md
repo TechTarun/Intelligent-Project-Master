@@ -32,7 +32,9 @@ So, IPM is your personal **Jarvis**, a tool from the future; for the future.
 <hr>
 
 ## Features
-<!--modular object oriented designing approach that makes any part easily replacable-->
+#### Key Features
+- Modular Object Oriented Designing approach that makes any part easily replacable
+- No Security Vulnerabilities
 
 ### - Github
 > - Voice based commands to find details of various repositories of the user .
@@ -56,6 +58,12 @@ Main query include-
 ### - Minutes OF Meetings
 >This module intelligently creates MOM during the scrum ceremony for the future reference 
 <!-- <img height="480px" src="image/WhatsApp Image 2020-08-02 at 5.14.47 PM.jpeg"> -->
+
+<hr>
+
+## User Interface
+- Main UI of Webapp
+<img height="480px" src="image/main ui.jpeg">
 
 <hr>
 
