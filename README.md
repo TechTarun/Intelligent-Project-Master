@@ -19,7 +19,7 @@ So, IPM is your personal **Jarvis**, a tool from the future; for the future.
 <hr>
 
 ### Architectural diagram
-<img height="480px" src="image/SIH.png">
+<img height="480px" src="image/Architecture_updated.jpeg">
 
 <hr>
 
