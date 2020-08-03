@@ -174,6 +174,23 @@ input#search-bar{
   display: none;
 }
 
+
+.hold-me{max-width:50px;border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0px 6px 20px 1px #00000063;
+    background-color: white;
+    margin-bottom: 15px;
+    cursor: pointer;}
+
+.hold-me:hover {
+    box-shadow: 0px 6px 20px 1px #3F51B5;
+    border: 1px solid #3F51B5;
+}
+
+
 </style>
 </head>
 <body>
@@ -193,26 +210,21 @@ input#search-bar{
 <div class="bg-text">
 
 <div id="mySidenav" class="sidenav">
-    <!-- <a href="{% url 'profill'%}"><img src="https://cdn4.iconfinder.com/data/icons/rounded-black-basic-ui/139/Home01-RoundedBlack-512.png" style="width: 70px; height: 70px;float:left;"></a> -->
-
-<!--  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
-<!--  <a href="{% url 'profill'%}">Profile</a>-->
-<!--  <a href="{% url 'jira' %}">Jira</a>-->
-<!--  <a href="{% url 'Confluence' %}">Confluence</a>-->
-<!--  <a href="{% url 'Github' %}">Github</a>-->
-<!--  <a href="{% url 'Bitbucket' %}">Bitbucket</a>-->
-<!--    <a href="{% url 'mailsearcher'%}">Emails</a>-->
-<!--  <a href="{% url 'index'%}">Logout</a>-->
+  
 </div>
 
 
-<!--<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>-->
+
 <div style="margin-top: 100px; margin-left:20px;">
    <img src="https://cdn.freebiesupply.com/logos/large/2x/confluence-logo-black-and-white.png" style="width: 511px; height: 137px;margin-left: 532px; padding-bottom: 51px;margin-top:62px; ">
    <form class="search-container" action="#" method="POST">
     {% csrf_token %}
+      <a href="listen"> <img class="search-icon hold-me"  src="https://image.flaticon.com/icons/svg/26/26312.svg"  style=" width: 90PX;
+    height: 42px;
+    top: -9px;
+    left: -215px;"></a>
     <input type="text" id="search-bar"  placeholder="What can I help you with today?" name="query" value='{{query}}'>
-    <a href="listen"><img class="search-icon " src="https://webstockreview.net/images/microphone-clipart-logo-10.png" style="width:90PX; height: 48px; top: -46px;"></a>
+   
     <a href="#" "><img class="search-icon " src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png" style="float:left;left:-16px;"></a>
 
   </form>
