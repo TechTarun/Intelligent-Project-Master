@@ -82,15 +82,21 @@ on writing your app without needing to reinvent the wheel. It’s free and open 
  >-- Some of the busiest sites on the Web leverage Django’s ability to quickly and flexibly scale.
 
  <a href="https://www.djangoproject.com/start/overview/">Learn more about Django</a>
+ 
+
 
 
 #### Supported Android versions
 >Android 7 and above (Android apps are tested on Android 7)
 
+<hr>
+
 ## Resources
 - https://github.com/PyGithub/PyGithub
 - https://github.com/usablica/intro.js/
 - https://github.com/dongjun-Lee/text-summarization-tensorflow
+
+<hr>
 
 ## License
 Apache License 2.0
