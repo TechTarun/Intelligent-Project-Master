@@ -67,7 +67,7 @@ Main query include-
 
 <hr>
 
-## Installation
+## Installation ![alt-text](https://github.com/TechTarun/SM446_Intelleneur/blob/master/image/ZZ5H.gif)
 ### Requirements
 >-  <a href="https://www.microsoft.com/en-in/windows/get-windows-10"><img height="15" width="15" src="image/window10_logo1.png"> Windows 10 </a>
 or
@@ -91,7 +91,7 @@ on writing your app without needing to reinvent the wheel. It’s free and open 
  >- Exceedingly scalable
  >-- Some of the busiest sites on the Web leverage Django’s ability to quickly and flexibly scale.
 
- >-- <a href="https://www.djangoproject.com/start/overview/">Learn more about Django</a>
+ <a href="https://www.djangoproject.com/start/overview/">Learn more about Django</a>
 
 
 #### Supported Android versions
