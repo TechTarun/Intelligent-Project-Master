@@ -23,9 +23,9 @@ So, IPM is your personal **Jarvis**, a tool from the future; for the future.
 
 ### Workflow
 
-| First Header  | Second Header |
+| Query Processing  | Keyword Extraction |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
+| <img height="480px" src="image/query process.jpeg">   | <img height="480px" src="image/keyword extract.jpeg">  |
 | Content Cell  | Content Cell  |
 #### - Query Processing
 <img height="480px" src="image/query process.jpeg"> 
