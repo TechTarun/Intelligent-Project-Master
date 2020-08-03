@@ -7,6 +7,8 @@ Now also get your mails managed by the IPM and create notes and MOM for your mee
 
 So, IPM is your personal **Jarvis**, a tool from the future; for the future.
 
+<hr>
+
 ### Use Case
 - The user can ask queries through voice-to-text conversion and will get appropriate text-to-voice response from IPM.
 - IPM will assist the scrum master by taking notes of the important discussions and store them in its database for future reference. 
@@ -83,9 +85,9 @@ on writing your app without needing to reinvent the wheel. It’s free and open 
 
  <a href="https://www.djangoproject.com/start/overview/">Learn more about Django</a>
  
-
-
-
+ #### Flutter
+ 
+ 
 #### Supported Android versions
 >Android 7 and above (Android apps are tested on Android 7)
 
