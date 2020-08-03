@@ -59,7 +59,6 @@ Main query include-
 
 <hr>
 
-## Installation <a href="#"><img height="15" width="15" src="https://github.com/TechTarun/SM446_Intelleneur/blob/master/image/ZZ5H.gif"></a>
 ### Requirements
 >-  <a href="https://www.microsoft.com/en-in/windows/get-windows-10"><img height="15" width="15" src="image/window10_logo1.png"> Windows 10 </a>
 or
@@ -93,11 +92,24 @@ on writing your app without needing to reinvent the wheel. It’s free and open 
 
 <hr>
 
+## Installation <a href="#"><img height="15" width="15" src="https://github.com/TechTarun/SM446_Intelleneur/blob/master/image/ZZ5H.gif"></a>
+1. Clone the repository.
+2. *Install prerequisites*
+	-  Linux 
+		- `pip3 install -r requirements_linux.txt`
+	- Windows
+		- `pip3 install -r requirements_windows.txt`
+3. Run the server by using command:
+	`python3 manage.py runserver`
+4. Enjoy our service!
+
+
 ## Resources
 - https://github.com/PyGithub/PyGithub
 - https://github.com/usablica/intro.js/
 - https://github.com/dongjun-Lee/text-summarization-tensorflow
 - https://airflow.apache.org/
+- [https://github.com/apache/airflow](https://github.com/apache/airflow)
 
 <hr>
 
