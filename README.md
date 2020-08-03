@@ -77,21 +77,21 @@ or
 > <a href="https://www.djangoproject.com/"> <img height="15" width="15" src="image/Django-logo.png"> Django- (sqlite) </a>
 
 <!--Starting here about Django -->          
-##### Meet Django
+> Meet Django
 Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design.
 Built by experienced developers, it takes care of much of the hassle of Web development, so you can focus
 on writing your app without needing to reinvent the wheel. It’s free and open source.  
 
- ###### Ridiculously fast
- >-Django was designed to help developers take applications from concept to completion as quickly as possible.      
+ >- Ridiculously fast
+ >-- Django was designed to help developers take applications from concept to completion as quickly as possible.      
 
- ###### Reassuringly secure
- >-Django takes security seriously and helps developers avoid many common security mistakes.
+ >- Reassuringly secure
+ >-- Django takes security seriously and helps developers avoid many common security mistakes.
 
- ###### Exceedingly scalable
- >-Some of the busiest sites on the Web leverage Django’s ability to quickly and flexibly scale.
+ >- Exceedingly scalable
+ >-- Some of the busiest sites on the Web leverage Django’s ability to quickly and flexibly scale.
 
- ###### <a href="https://www.djangoproject.com/start/overview/">Learn more about Django</a>
+ >-- <a href="https://www.djangoproject.com/start/overview/">Learn more about Django</a>
 
 
 #### Supported Android versions
