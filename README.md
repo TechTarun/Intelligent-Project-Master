@@ -25,7 +25,7 @@ So, IPM is your personal **Jarvis**, a tool from the future; for the future.
 
 | Query Processing  | Keyword Extraction | MoM Extraction |
 | ------------- | ------------- | ------------- |
-| <img height="480px" src="image/query process.jpeg">   | <img height="480px" src="image/keyword extract.jpeg">  | <img height="480px" src="image/mom extract.jpeg">  |
+| <img height="480px" width="600px" src="image/query process.jpeg">   | <img height="480px" src="image/keyword extract.jpeg">  | <img height="480px" src="image/mom extract.jpeg">  |
 
 <hr>
 
