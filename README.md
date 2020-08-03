@@ -73,7 +73,7 @@ or
 >- <a href="https://ubuntu.com/#download"><img height="15" width="15" src="image/ubantu-logo.png"> Ubuntu 18.04 </a>
 
 #### Backend & Web UI Host Requirements
-> <a href="https://www.djangoproject.com/"> <img height="15" width="15" src="image/Django-logo.png"> Django- (sqlite) </a>
+> <a href="https://www.djangoproject.com/"> <img height="15" width="15" src="image/Django-logo.png"> Django </a>
 
 <!--Starting here about Django -->          
 > Meet Django
@@ -92,7 +92,9 @@ on writing your app without needing to reinvent the wheel. It’s free and open 
 
  <a href="https://www.djangoproject.com/start/overview/">Learn more about Django</a>
  
- #### Flutter
+ #### Flutter (Installation Guide)
+ >- <a href="https://flutter.dev/docs/get-started/install">Click Here</a>
+ 
  
  
 #### Supported Android versions
