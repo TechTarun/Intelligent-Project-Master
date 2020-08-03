@@ -173,6 +173,20 @@ input#search-bar{
 
 
 
+.hold-me{max-width:50px;border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0px 6px 20px 1px #00000063;
+    background-color: white;
+    margin-bottom: 15px;
+    cursor: pointer;}
+
+.hold-me:hover {
+    box-shadow: 0px 6px 20px 1px #3F51B5;
+    border: 1px solid #3F51B5;
+}
 
 
 </style>
@@ -209,8 +223,12 @@ input#search-bar{
     <a> <img src="https://cfdn.clearvision-cm.com/wp-content/uploads/2018/05/31102732/Bitbucket%402x-white1.png" style="width: 507px; height: 134px; margin-left: 520px; padding-bottom:58px; margin-top: 91px; "></a>
    <form class="search-container" action="#" method="POST" >
     {% csrf_token %}
+      <a href="listen"> <img class="search-icon hold-me"  src="https://image.flaticon.com/icons/svg/26/26312.svg"  style=" width: 90PX;
+    height: 42px;
+    top: -9px;
+    left: -215px;"></a>
     <input type="text" id="search-bar" placeholder="What can I help you with today?" name="query" value='{{query}}'>
-    <a href="listen"><img class="search-icon" src="https://webstockreview.net/images/microphone-clipart-logo-10.png" style="width:90px; height:48px; top:-46px;left:85px;"></a>
+   
     <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png" style="float:left;left:-46px;"></a>
 
   </form>
