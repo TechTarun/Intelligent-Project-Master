@@ -23,18 +23,9 @@ So, IPM is your personal **Jarvis**, a tool from the future; for the future.
 
 ### Workflow
 
-| Query Processing  | Keyword Extraction |
-| ------------- | ------------- |
-| <img height="480px" src="image/query process.jpeg">   | <img height="480px" src="image/keyword extract.jpeg">  |
-| Content Cell  | Content Cell  |
-#### - Query Processing
-<img height="480px" src="image/query process.jpeg"> 
-
-#### - Keyword Extraction
-<img height="480px" src="image/keyword extract.jpeg">
-
-#### - MoM Extraction
-<img height="480px" src="image/mom extract.jpeg">
+| Query Processing  | Keyword Extraction | MoM Extraction |
+| ------------- | ------------- | ------------- |
+| <img height="480px" src="image/query process.jpeg">   | <img height="480px" src="image/keyword extract.jpeg">  | <img height="480px" src="image/mom extract.jpeg">  |
 
 <hr>
 
