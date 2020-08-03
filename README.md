@@ -74,7 +74,7 @@ or
 >- <a href="https://ubuntu.com/#download"><img height="15" width="15" src="image/ubantu-logo.png"> Ubuntu 18.04 </a>
 
 #### Backend & Web UI Host Requirements
-> <a href="https://www.djangoproject.com/">Django- (sqlite) </a>
+> <a href="https://www.djangoproject.com/"><img height="15" width="15" src="image/Django-logo.png"> Django- (sqlite) </a>
 
 #### Supported Android versions
 >Android 7 and above (Android apps are tested on Android 7)
