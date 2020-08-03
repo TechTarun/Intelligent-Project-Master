@@ -39,19 +39,15 @@ So, IPM is your personal **Jarvis**, a tool from the future; for the future.
 ### - Github
 > - Voice based commands to find details of various repositories of the user .
 >- User can find commits, pull requests as well as issues of any repository.
-
-   <img height="240px" width="480px" src="image/WhatsApp Image 2020-08-02 at 4.36.02 PM.jpeg">
    
 ### - Jira
 >- Issues can be created, updated or deleted through voice commands.
 >- Attachment actions like creating attachment as a comment or adding them.
-   <img height="240px" width="480px" src="image/WhatsApp Image 2020-08-02 at 4.25.05 PM.jpeg">
  
 ### - Confluence
 >- Voice based creation of pages.
 >- Organises your attachment in folders.
 >- Easily checks if a task is complete, assigned or due
-   <img height="240px" width="480px" src="image/Screenshot (5).png">
 
 ### - Bitbucket
 >This module intelligently answers user's query, regarding any repository on BitBucket.
@@ -59,8 +55,6 @@ Main query include-
 >- Manage repositories like granting permission to an specific user or group,getting branching model,etc
 >- Manage projects like creating a project, fetching project summary.
 
-   <img height="240px" width="480px" src="image/Screenshot (7).png">
-   
 ### - Minutes OF Meetings
 >This module intelligently creates MOM during the scrum ceremony for the future reference 
 <img height="480px" src="image/WhatsApp Image 2020-08-02 at 5.14.47 PM.jpeg">
