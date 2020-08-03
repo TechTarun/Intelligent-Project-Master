@@ -67,7 +67,7 @@ Main query include-
 
 <hr>
 
-## Installation <img height="15" width="15" src="https://github.com/TechTarun/SM446_Intelleneur/blob/master/image/ZZ5H.gif">
+## Installation <a href="#"><img height="15" width="15" src="https://github.com/TechTarun/SM446_Intelleneur/blob/master/image/ZZ5H.gif"></a>
 ### Requirements
 >-  <a href="https://www.microsoft.com/en-in/windows/get-windows-10"><img height="15" width="15" src="image/window10_logo1.png"> Windows 10 </a>
 or
