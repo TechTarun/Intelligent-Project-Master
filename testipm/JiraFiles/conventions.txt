@@ -1,0 +1,2 @@
+Use all multiword variables with underscore e.g. all_projects
+Write class names or function names in camel case e.g. getAllProjects()

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="https://www.betterbuys.com/wp-content/uploads/2016/08/IPM-Global-logo.png">
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js@2.9.3/introjs.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js@2.9.3/themes/introjs-modern.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    /* removing bullets coz it was building some unwanted blocks */
+.introjs-bullets {
+  display: none;
+}
+body {
+  font-family: "Lato", sans-serif;
+ 
+  background-image: url("https://www.kindpng.com/picc/m/255-2558173_github-logo-png-transparent-png.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: -8px;
+ /* padding: 0;*/
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #111;
+}
+
+
+
+
+
+/*search*/
+
+
+
+.search-container{
+  width: 490px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 25px;
+}
+
+input#search-bar{
+  margin: 0 -70px;
+  width: 100%;
+  height: 45px;
+  padding: 0 50px;
+  font-size: 1rem;
+  border: 1px solid #D0CFCE;
+  outline: none;
+  border-radius: 25px;
+  &:focus{
+    border: 1px solid #008ABF;
+    transition: 0.35s ease;
+    color: #008ABF;
+    &::-webkit-input-placeholder{
+      transition: opacity 0.45s ease; 
+      opacity: 0;
+     }
+    &::-moz-placeholder {
+      transition: opacity 0.45s ease; 
+      opacity: 0;
+     }
+    &:-ms-placeholder {
+     transition: opacity 0.45s ease; 
+     opacity: 0;
+     }    
+   }
+ }
+
+.search-icon{
+  position: relative;
+  float: right;
+  width: 75px;
+  height: 75px;
+  top: -62px;
+  right: -50px;
+}
+
+
+
+
+
+.bg-image {
+  /* The image used */
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+   /* Fallback color */
+  background-image: linear-gradient(to bottom, rgba(204,204,204,0.8),rgba(102,102,102,0.8), rgba(0,0,0,1)); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+ 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  width: 100%;
+  height:100%;
+  /*padding: 20px;*/
+  text-align:left;
+}
+
+
+.hold-me{max-width:50px;border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0px 6px 20px 1px #00000063;
+    background-color: white;
+    margin-bottom: 15px;
+    cursor: pointer;}
+
+.hold-me:hover {
+    box-shadow: 0px 6px 20px 1px #3F51B5;
+    border: 1px solid #3F51B5;
+}
+  
+
+
+
+
+</style>
+</head>
+<body>
+      <ul>
+  <li><a href="{% url 'homepageindex'%}">Home</a></li>
+  <li><a href="{% url 'jira'%}">Jira</a></li>
+  <li><a href="{% url 'Confluence'%}">Confluence</a></li>
+  <li><a href="{% url 'Bitbucket'%}">Bitbucket</a></li>
+  <li><a href="{% url 'mailsearcher'%}">Email</a></li>
+
+  <li style="float:right"><a class="active" href="{% url 'landpageindex'%}">Logout</a></li>
+</ul>
+
+    <div class="bg-image"></div>
+
+<div class="bg-text">
+
+<div id="mySidenav" class="sidenav">
+</div>
+
+
+<!--<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>-->
+<div style="margin-top: 100px; margin-left:20px;">
+   <img src="https://saas.whitesourcesoftware.com/Wss/github/github-logo-white.png" style="width: 500px; height: 200px;margin-left:500px;padding-bottom:30px;">
+   <form class="search-container" action="{%url 'search_github' %}" method="POST">
+    {% csrf_token %}
+    <a href='listen'><img class="search-icon hold-me" src="https://image.flaticon.com/icons/svg/26/26312.svg"  style=" width: 90PX;
+    height: 42px;
+    top: -9px;
+    left: -215px; "></a>
+
+    <input type="text" id="search-bar" placeholder="What can I help you with today?" name="query" value='{{query}}'>
+         <a href="#"><a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png" style="float:left;left:-83px;"></a>
+
+  </form>
+  </div>
+<div style="text-align: center;">
+  <textarea>{{output}}</textarea>
+</div>
+
+  </div>
+
+<!-- Website tour -->
+<script src="https://cdn.jsdelivr.net/npm/intro.js@2.9.3/intro.min.js"></script>
+   <script>
+     const intro = introJs()
+   
+   intro.setOptions({
+       steps: [{
+            element:'.step-one',
+           intro: `Here, you can query about Github. Click on Mic to get started.`
+       },
+   ]
+   })
+   
+   intro.start();
+   </script>
+   
+
+   
+</body>
+</html> 

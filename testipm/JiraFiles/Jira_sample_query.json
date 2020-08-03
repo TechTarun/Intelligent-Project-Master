@@ -1,0 +1,105 @@
+{	"JiraQueries" : 
+	[
+		{
+			"queries" : [
+				"create a new jira project",
+				"make a new project in jira",
+				"built a new project in jira"
+			],
+			"domain" : "create project"
+		},
+
+		{
+			"queries" : [
+				"delete a jira project",
+				"erase a jira project",
+				"move jira project to trash",
+				"move to trash jira project"
+			],
+			"domain" : "delete project"
+		},
+
+		{
+			"queries" : [
+				"update a jira project",
+				"make a change in jira project"
+			],
+			"domain" : "update project"
+		},
+
+		{
+			"queries" : [
+				"get details of the project", 
+				"get all details of project on jira",
+				"fetch all details related to project",
+				"collect all details regarding the project",
+				"fetch project details",
+				"collect all project details"
+			],
+			"domain" : "details project"
+		},
+
+		{
+			"queries" : [
+				"create an issue or jira ticket",
+				"make an jira issue ticket",
+				"create a jira ticket",
+				"make a jira ticket",
+				"build a issue or jira ticket",
+				"built a jira ticket"
+			],
+			"domain" : "create issue"
+		},
+
+		{
+			"queries" : [
+				"edit jira ticket or issue",
+				"make a change in ticket issue",
+				"update jira issue",
+				"modify jira ticket"
+			],
+			"domain" : "update issue"
+		},
+
+		{
+			"queries" : [
+				"delete a issue or jira ticket",
+				"erase a ticket or issue",
+				"move issue to trash or ticket to trash",
+				"move to trash this issue or ticket"
+			],
+			"domain" : "delete issue"
+		},
+
+		{
+			"queries" : [
+				"get details of the issue or ticket", 
+				"get all details of issue or ticket on jira",
+				"fetch all details related to ticket or issue",
+				"collect all details regarding the issue or jira ticket",
+				"fetch issue or ticket details",
+				"collect all ticket or issue details"
+			],
+			"domain" : "details issue"
+		},
+
+		{
+			"queries" : [
+				"move this issue or ticket to done",
+				"move this issue or jira ticket to in progress",
+				"move this issue or ticket in to do"
+			],
+			"domain" : "transition issue"
+		},
+
+		{
+			"queries" : [
+				"assign this issue or jira ticket",
+				"give issue or ticket",
+				"allot this ticket or issue",
+				"send this issue or ticket"
+			],
+			"domain" : "assign issue"
+		}
+	]
+}

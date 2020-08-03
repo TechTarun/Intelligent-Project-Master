@@ -1,10 +1,228 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="shortcut icon" href="https://www.betterbuys.com/wp-content/uploads/2016/08/IPM-Global-logo.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+ 
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSw2FxZ3ofXeQgBS-tv3uBw7ct4jHZ4MlIPgJ14ZRkj1DsHRry_");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ul {
+  list-style-type: none;
+  margin: -8px;
+ /* padding: 0;*/
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #111;
+}
+
+
+
+
+/*<!--.sidenav {-->
+<!--  height: 100%;-->
+<!--  width: 0;-->
+<!--  position: fixed;-->
+<!--  z-index: 1;-->
+<!--  background-color: #111;-->
+<!--  overflow-x: hidden;-->
+<!--  transition: 0.5s;-->
+<!--  padding-top: 60px;-->
+<!--}-->
+
+<!--.sidenav a {-->
+<!--  padding: 8px 8px 8px 32px;-->
+<!--  text-decoration: none;-->
+<!--  font-size: 25px;-->
+<!--  color: #818181;-->
+<!--  display: block;-->
+<!--  transition: 0.3s;-->
+<!--}-->
+
+<!--.sidenav a:hover {-->
+<!--  color: #f1f1f1;-->
+<!--}-->
+
+<!--.sidenav .closebtn {-->
+<!--  position: absolute;-->
+<!--  right: 25px;-->
+<!--  font-size: 36px;-->
+<!--  margin-left: 50px;-->
+<!--}-->
+
+<!--@media screen and (max-height: 450px) {-->
+<!--  .sidenav {padding-top: 15px;}-->
+<!--  .sidenav a {font-size: 18px;}-->
+<!--}-->*/
+
+/*search*/
+
+
+
+.search-container{
+  width: 490px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 9px;
+}
+
+input#search-bar{
+  margin: 0 -32;
+  width: 100%;
+  height: 45px;
+  padding: 0 50px;
+  font-size: 1rem;
+  border: 1px solid #D0CFCE;
+  outline: none;
+  border-radius: 25px;
+  &:focus{
+    border: 1px solid #008ABF;
+    transition: 0.35s ease;
+    color: #008ABF;
+    &::-webkit-input-placeholder{
+      transition: opacity 0.45s ease; 
+      opacity: 0;
+     }
+    &::-moz-placeholder {
+      transition: opacity 0.45s ease; 
+      opacity: 0;
+     }
+    &:-ms-placeholder {
+     transition: opacity 0.45s ease; 
+     opacity: 0;
+     }    
+   }
+ }
+
+.search-icon{
+  position: relative;
+  float: right;
+  width: 75px;
+  height: 75px;
+  top: -62px;
+  right: -121px;
+}
+
+
+
+
+
+.bg-image {
+  /* The image used */
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+   /* Fallback color */
+  background-image: linear-gradient(to bottom, rgba(102,0,255,0.8), rgba(0,0,0,1)); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+ 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  width: 100%;
+  height:100%;
+  /*padding: 20px;*/
+  text-align:left;
+}
+
+
+
+
+
+</style>
 </head>
 <body>
 
+    <ul>
+  <li><a href="{% url 'homepageindex'%}">Home</a></li>
+  <li><a href="{% url 'jira'%}">Jira</a></li>
+  <li><a href="{% url 'Confluence'%}">Confluence</a></li>
+  <li><a href="{% url 'Github'%}">Github</a></li>
+  <li><a href="{% url 'mailsearcher'%}">Email</a></li>
+
+  <li style="float:right"><a class="active" href="{% url 'landpageindex'%}">Logout</a></li>
+</ul>
+
+    <div class="bg-image"></div>
+
+<div class="bg-text">
+
+<div id="mySidenav" class="sidenav">
+    <!-- <a href="{% url 'profill'%}"><img src="https://cdn4.iconfinder.com/data/icons/rounded-black-basic-ui/139/Home01-RoundedBlack-512.png" style="width: 70px; height: 70px;float:left;"></a> -->
+</div>
+
+
+<!--<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>-->
+<div style="margin-top: 100px; margin-left:20px;">
+   <img src="https://cdn.freebiesupply.com/logos/large/2x/confluence-logo-black-and-white.png" style="width: 511px; height: 137px;margin-left: 532px; padding-bottom: 51px;margin-top:62px; ">
+   <form class="search-container" action="{% url 'search_confluence' %}" method="POST">
+    {% csrf_token %}
+    <input type="text" id="search-bar" placeholder="What can I help you with today?" name="query" value='{{query}}'>
+    <a href="listen"><img class="search-icon" src="https://webstockreview.net/images/microphone-clipart-logo-10.png" style="width:90PX; height: 48px; top: -46px;"></a>
+    <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png" style="float:left;left:-16px;"></a>
+  </form>
+  <br>
+  <br>
+  </div>
+<div style="text-align: center;">
+  <h3>{{output}}</h3>
+</div>
+
+  </div>
+
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
 </body>
-</html>
+</html> 

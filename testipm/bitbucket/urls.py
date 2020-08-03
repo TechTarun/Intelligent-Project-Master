@@ -1,7 +1,7 @@
-from django.urls import path,include
+from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.bitbucket, name="Bitbucket"),
-
+    path('', views.Bitbucket, name="Bitbucket"),
+    path('listen', views.listenBitbucketQuery, name='bitbucket_listen'),
     ]
