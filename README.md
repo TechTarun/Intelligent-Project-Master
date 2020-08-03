@@ -74,7 +74,36 @@ or
 >- <a href="https://ubuntu.com/#download"><img height="15" width="15" src="image/ubantu-logo.png"> Ubuntu 18.04 </a>
 
 #### Backend & Web UI Host Requirements
-> <a href="https://www.djangoproject.com/"><img height="15" width="15" src="image/Django-logo.png"> Django- (sqlite) </a>
+> <a href="https://www.djangoproject.com/"> <img height="15" width="15" src="image/Django-logo.png"> Django- (sqlite) </a>
+
+<!--Starting here about Django -->
+<div class="section">
+        <h1>Meet Django</h1>
+        <p>
+          Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design.
+          Built by experienced developers, it takes care of much of the hassle of Web development, so you can focus
+          on writing your app without needing to reinvent the wheel. It’s free and open source.
+        </p>
+        <dl class="list-features">
+          <dt><i class="icon icon-bolt"></i> Ridiculously fast.</dt>
+          <dd>
+            <p>Django was designed to help developers take applications from concept to completion as quickly as possible.</p>
+          </dd>
+
+          <dt><i class="icon icon-lock"></i> Reassuringly secure.</dt>
+          <dd>
+            <p>Django takes security seriously and helps developers avoid many common security mistakes.</p>
+          </dd>
+
+          <dt><i class="icon icon-dashboard"></i> Exceedingly scalable.</dt>
+          <dd>
+            <p>Some of the busiest sites on the Web leverage Django’s ability to quickly and flexibly scale.</p>
+          </dd>
+        </dl>
+
+        <a href="https://www.djangoproject.com/start/overview/" class="cta outline">Learn more about Django</a>
+    </div>
+
 
 #### Supported Android versions
 >Android 7 and above (Android apps are tested on Android 7)
