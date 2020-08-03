@@ -100,5 +100,5 @@ on writing your app without needing to reinvent the wheel. It’s free and open 
 <hr>
 
 ## License
-Apache License 2.0
+Apache License 2.0 <br>
 Apache Airflow
